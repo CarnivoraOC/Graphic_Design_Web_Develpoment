@@ -1,0 +1,68 @@
+body{
+    background: -webkit-linear-gradient(rgb(170, 220, 250), rgb(240, 130, 130));
+}
+
+#container{
+    height: 110vh;
+    width: 9000px;
+    margin-left: -10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container *{
+    position: absolute;
+}
+
+/*START Background elements*/
+
+#background, #foreground, #lavaBackground{
+    width: 100%;
+    height: 500px;
+    bottom: 430px;   
+}
+
+#lavaBackground{
+    bottom: 460px;
+}
+
+#bigMoon{
+    background-color: bisque;
+    height: 620px;
+    width: 620px;
+    border-radius: 50%;
+    margin-left: 7100px;
+    bottom: 100px;
+}
+
+/*END Background elements*/
+
+/*START Scenario-divs*/
+.scenario-div{
+    height: 100%;
+    width: 2250px;
+}
+
+.scenario-div *{
+    position: absolute;
+}
+
+#earthScenario{
+    margin-left: 2250px;
+}
+
+#fireScenario{
+    margin-left: 4500px;
+}
+
+#airScenario{
+    margin-left: 6750px;
+}
+/*END Scenario-divs*/
+
+/*START elements*/
+.element *{
+    position: absolute;
+}
+
+

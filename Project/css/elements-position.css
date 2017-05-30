@@ -1,0 +1,185 @@
+.element{
+    height: 200px;
+    width: 200px;
+}
+
+/*START water elements*/
+#waterWave{
+    top: 480px;
+    left: 400px;
+}
+
+#waterDolphin{
+    top: 450px;
+    left: 300px;
+    height: 80px;
+    width: 80px;
+}
+
+#waterCoconutContainer{
+    top: 500px;
+    left: 1200px;
+}
+
+#waterCoconutContainer *{
+    position: absolute;
+}
+
+#waterCoconutTree{
+    height: 200px;
+    width: 200px;
+}
+
+#waterCoconut{
+    height: 40px;
+    width: 40px;
+    left: 70px;
+    top: 40px;
+}
+
+#waterHutContainer{
+    top: 440px;
+    left: 780px;
+}
+
+#waterHutContainer *{
+    position: absolute;
+}
+
+#waterSeagul{
+    height: 80px;
+    width: 80px;
+    top: -35px;
+    left: 80px;
+}
+
+#waterHut{
+    height: 220px;
+    width: 220px;
+}
+
+#waterSurfboard{
+    height: 100px;
+    width: 50px;
+    top: 120px;
+    left: 190px;
+}
+/*END water elements*/
+
+/*START earth elements*/
+#earthEgg{
+    top: 400px;
+    left: 840px;
+    height: 30px;
+    width: 30px;
+}
+
+#earthCarpet{
+    top: 100px;
+    left:1300px;
+}
+
+#earthScull{
+    top: 550px;
+    left: 900px;
+    height: 100px;
+    width: 100px;
+}
+
+#earthCactusLarge{
+    top: 500px;
+    left: 200px;
+}
+
+#earthCactusSmall{
+    top: 430px;
+    left: 1400px;
+    height: 50px;
+    width: 50px;
+}
+
+#earthCamel{
+    height: 30px;
+    width: 30px;
+    left: 1040px;
+    top: 320px;
+}
+
+#earthPyramids{
+    height: 350px;
+    width: 350px;
+    top: 420px;
+    left: 830px;
+}
+
+#earthSnake{
+    top: 520px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+}
+/*END earth elements*/
+
+/*START fire elements*/
+#fireCampfire{
+    height: 60px;
+    width: 60px;
+    top: 540px;
+    left: 500px;
+}
+
+#fireTree{
+    height: 300px;
+    width: 300px;
+    top: 250px;
+    left: 250px;
+}
+
+#fireMask{
+    height: 60px;
+    width: 60px;
+    top: 630px;
+    left: 1100px;
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Chrome, Safari, Opera */
+    transform: rotate(60deg);
+    
+}
+
+#fireVolcano{
+    top: -100px;
+    left: 353px;
+    width: 1400px;
+    height: 1400px;
+}
+/*END fire elements*/
+
+/*START air elements*/
+#airRain{
+    top: 200px;
+    left: 800px;
+    height: 350px;
+    width: 350px;
+}
+
+#airThunder{
+    top: 200px;
+    left: 1500px;
+    height: 280px;
+    width: 280px;
+}
+
+#airWolf{
+    top: 380px;
+    left: 400px;
+    height: 180px;
+    width: 180px;
+}
+
+#airWindchime{
+    top: 580px;
+    left: 650px;
+    height: 50px;
+    width: 50px;
+}
+/*END air elements*/
