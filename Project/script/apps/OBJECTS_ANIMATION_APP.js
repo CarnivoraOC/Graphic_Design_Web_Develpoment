@@ -4,7 +4,7 @@ var OBJECTS_ANIMATION_APP = {
         
         var OP = OBJECTS_ANIMATION_APP;
         
-        var shakeMask = $("#fireMask").click(function(){
+        var shakeMask = $("#earthSnake").click(function(){
             $(this).effect("shake", "slow");
             
         }) // end shakemask
@@ -13,13 +13,22 @@ var OBJECTS_ANIMATION_APP = {
         var moveWave = $("#waterWave").click(function(){
             $(this).animate(
                 {
-                    left: "100px",
-                    width: "250px"
-                }
-            );
+                    left: "-200px"
+                });
+            
         }) // end moveWave
         
-        var loopWave = setInterval(function(){ moveWave() }, 300);
+        var volcaneSmoke = $("#fireVolcano").click(function(){
+            $(this).fadeOut(2000);
+            $(this).fadeIn(2000);
+            
+        }) //end volcaneSmoke
+        
+        
+       
+         
+        
+        //var loopWave = setInterval(function(){ moveWave() }, 300);
         
     }//end init
     
