@@ -24,10 +24,24 @@ var BACKGROUND_ANIMATION = (function(){
         return createRGBCode(min, max);
     }
     
+    function autochangeClass(element, className, time){
+        setInterval(function(){
+            $(element).toggleClass(className)
+
+        }, time);
+    }
     
-    
+    function isElementInViewport(element){
+        var elemTop = element.getBoundingClientRect().top;
+        var elemBottom = element.getBoundingClientRect().bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+    }
+
     return {
-        getRandomColor: getRandomColor
+        getRandomColor: getRandomColor,
+        autochangeClass: autochangeClass,
     }
     
     
