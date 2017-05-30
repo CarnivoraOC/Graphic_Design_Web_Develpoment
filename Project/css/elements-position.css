@@ -177,8 +177,9 @@
 }
 
 #airWindchime{
-    top: 580px;
     left: 650px;
+    top: 550px;
+    left: 690px;
     height: 50px;
     width: 50px;
 }
