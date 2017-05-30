@@ -1,9 +1,9 @@
-var BACKGROUND_APP = {
+var BACKGROUND_ANIMATION_APP = {
     
     
     init: function(){
     
-        var BP = BACKGROUND_APP;
+        var BP = BACKGROUND_ANIMATION_APP;
         
         
     
