@@ -17,7 +17,7 @@ var BACKGROUND_ANIMATION_APP = {
         }, 500);
         }();
         
-        var currentScenario(){
+        var currentScenario = function(){
             
         }
     }// end init
