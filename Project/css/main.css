@@ -19,11 +19,11 @@ body{
 #background, #foreground, #lavaBackground{
     width: 100%;
     height: 500px;
-    bottom: 430px;   
+    bottom: 360px;   
 }
 
 #lavaBackground{
-    bottom: 460px;
+    bottom: 420px;
 }
 
 #bigMoon{
@@ -37,7 +37,13 @@ body{
 
 /*END Background elements*/
 
-/*START Scenario-divs*/
+/*START Scenario*/
+#scenarioContainer{
+    height: 100%;
+    width: 100%;
+    bottom: -70px;
+}
+
 .scenario-div{
     height: 100%;
     width: 2250px;

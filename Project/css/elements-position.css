@@ -17,7 +17,7 @@
 }
 
 #waterCoconutContainer{
-    top: 500px;
+    top: 480px;
     left: 1200px;
 }
 
@@ -38,8 +38,8 @@
 }
 
 #waterHutContainer{
-    top: 440px;
-    left: 780px;
+    top: 420px;
+    left: 800px;
 }
 
 #waterHutContainer *{
