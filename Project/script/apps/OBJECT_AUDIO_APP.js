@@ -12,19 +12,18 @@ var OBJECT_AUDIO_APP = {
                 }
                 
             })
-        
-        var sound = OBJECT_AUDIO.getWaterSound();
-
             //Resets a sound's timer and plays it from the start
+        
+        var waterSounds = OBJECT_AUDIO.getWaterSound();
+        
             function playSound(name) {
-                
-                sound[name].currentTime = 0;
-                sound[name].play();
+                waterSounds[name].currentTime = 0;
+                waterSounds[name].play();
             }
             
             function pauseSound(name) {
-                sound[name].currentTime = 0;
-                sound[name].pause();
+                waterSounds[name].currentTime = 0;
+                waterSounds[name].pause();
             }
         
     }// end init
