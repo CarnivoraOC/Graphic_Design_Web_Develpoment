@@ -39,38 +39,45 @@
             </div>
             <div id="earthScenario" class="scenario-div">
                 <div id="earthEgg" class="element earth-element"><img src="GDElements/Oorken/Elementer/egg.svg"></div>
-                <div id="earthCarpet" class="element earth-element"><img src="GDElements/Oorken/Elementer/flyvende_teppe.svg"></div>
-                <div id="earthCactusLarge" class="element earth-element"><img src="GDElements/Oorken/Elementer/kaktus1.svg"></div>
-                <div id="earthCactusSmall" class="element earth-element"><img src="GDElements/Oorken/Elementer/kaktus2.svg"></div>
-                <div id="earthCamel" class="element earth-element"><img src="GDElements/Oorken/Elementer/kamel.svg"></div>
-                <div id="earthPyramids" class="element earth-element"><img src="GDElements/Oorken/Elementer/pyramider.svg"></div>
-                <div id="earthSnake" class="element earth-element"><img src="GDElements/Oorken/Elementer/snek.svg"></div>
-                <div id="earthScull" class="element earth-element"><img src="GDElements/Oorken/Elementer/hodeskalle.svg"></div>
-            </div>
-            <div id="fireScenario" class="scenario-div">
-                <div id="fireCampfire" class="element fire-element"><img src="GDElements/Ild/Elementer/baal.svg"></div>
-                <div id="fireTree" class="element fire-element"><img src="GDElements/Ild/Elementer/dodt_tre_cello.svg"></div>
-                <div id="fireMask" class="element fire-element"><img src="GDElements/Ild/Elementer/tribal_mask.svg"></div>
-                <div id="fireVolcano" class="element fire-element"><img src="GDElements/Ild/Elementer/vulkanutbrudd.svg"></div>
-            </div>
-            <div id="airScenario" class="scenario-div">
-                <div id="airRain" class="element air-element"><img src="GDElements/Luft/Elementer/regn.svg"></div>
-                <div id="airThunder" class="element air-element"><img src="GDElements/Luft/Elementer/torden.svg"></div>
-                <div id="airWolf" class="element air-element"><img src="GDElements/Luft/Elementer/ulv.svg"></div>
-                <div id="airWindchime" class="element air-element"><img src="GDElements/Luft/Elementer/windchime.svg"></div>
+                <div id="earthCarpet" class="element earth-element"> <img src="GDElements/Oorken/Elementer/flyvende_teppe.svg" </div>
+                    <div id="earthCactusLarge" class="element earth-element"><img src="GDElements/Oorken/Elementer/kaktus1.svg"></div>
+                    <div id="earthCactusSmall" class="element earth-element"><img src="GDElements/Oorken/Elementer/kaktus2.svg"></div>
+                    <div id="earthCamel" class="element earth-element"><img src="GDElements/Oorken/Elementer/kamel.svg"></div>
+                    <div id="earthPyramids" class="element earth-element"><img src="GDElements/Oorken/Elementer/pyramider.svg"></div>
+                    <div id="earthSnake" class="element earth-element"><img src="GDElements/Oorken/Elementer/snek.svg"></div>
+                    <div id="earthScull" class="element earth-element"><img src="GDElements/Oorken/Elementer/hodeskalle.svg"></div>
+                </div>
+                <div id="fireScenario" class="scenario-div">
+                    <div id="fireCampfire" class="element fire-element"><img src="GDElements/Ild/Elementer/baal.svg"></div>
+                    <div id="fireTree" class="element fire-element"><img src="GDElements/Ild/Elementer/dodt_tre_cello.svg"></div>
+                    <div id="fireMask" class="element fire-element"><img src="GDElements/Ild/Elementer/tribal_mask.svg"></div>
+                    <div id="fireVolcano" class="element fire-element"><img src="GDElements/Ild/Elementer/vulkanutbrudd.svg"></div>
+                </div>
+                <div id="airScenario" class="scenario-div">
+                    <div id="airRain" class="element air-element"><img src="GDElements/Luft/Elementer/regn.svg"></div>
+                    <div id="airThunder" class="element air-element"><img src="GDElements/Luft/Elementer/torden.svg"></div>
+                    <div id="airWolf" class="element air-element"><img src="GDElements/Luft/Elementer/ulv.svg"></div>
+                    <div id="airWindchime" class="element air-element"><img src="GDElements/Luft/Elementer/windchime.svg"></div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <script src="script/js/jquery-3.2.0.min.js"></script>
-    <script src="script/js/jquery-ui.min.js"></script>
-    <script src="script/modules/BACKGROUND_ANIMATION.js"></script>
-    <script src="script/modules/OBJECT_ANIMATION.js"></script>
-    <script src="script/apps/BACKGROUND_ANIMATION_APP.js"></script>
-    <script src="script/apps/OBJECTS_ANIMATION_APP.js"></script>
-    <script src="script/main.js"></script>
-
-    
+        <script src="script/js/jquery-3.2.0.min.js"></script>
+            
+        <script src="script/js/jquery-ui.min.js"></script>
+        <script src="script/modules/BACKGROUND_ANIMATION.js"></script>
+        <script src="script/modules/OBJECT_ANIMATION.js"></script>
+        <script src="script/apps/BACKGROUND_ANIMATION_APP.js"></script>
+        <script src="script/apps/OBJECTS_ANIMATION_APP.js"></script>
+        <script src="script/plugins/jquery.firefly.js"></script>
+        <script src="script/main.js"></script>
+        
+        <script>
+        $(document).ready(function () {
+            
+            $.firefly({images : ['GDElements/Partikler/1.jpg', 'GDElements/Partikler/2.jpg'],total : 40})(); 
+            
+        });
+    </script>
 </body>
 
 </html>

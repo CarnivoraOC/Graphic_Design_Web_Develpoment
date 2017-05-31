@@ -20,6 +20,15 @@ var BACKGROUND_ANIMATION_APP = {
         var currentScenario = function(){
             
         }
+        
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+$.each($("div"),function(){
+    p = $(this).position();
+    //horizontal
+    if (p.left < 0 - $(this).width() || p.left > w){
+        console.log($(this) + "er i vewprt")
+    }
+});
     }// end init
    
 }; //End BACKGROUND_ANIMATION_APP
