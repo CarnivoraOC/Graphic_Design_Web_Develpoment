@@ -24,8 +24,6 @@ var OBJECTS_ANIMATION_APP = {
             
         }) //end volcaneSmoke
         
-        
-       
          
         
         //var loopWave = setInterval(function(){ moveWave() }, 300);
