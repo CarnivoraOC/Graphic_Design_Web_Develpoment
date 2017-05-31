@@ -24,7 +24,27 @@ var OBJECTS_ANIMATION_APP = {
             
         }) //end volcaneSmoke
         
-         
+       var nbDrop = 500;
+        
+        var getRandomRange = function(minNum, maxNum){
+            
+            return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+        
+        }
+        
+        var createRain = function(){
+            var rain = $(".rain");
+            for (var i = 1; i < nbDrop; i++) {
+                var dropLeft = getRandomRange(0, 1600);
+                var dropTop = getRandomRange(-1000, 1400);
+                
+                rain.append('<div class="drop" id="drop' + i + '"></div>')
+                $("#drop" + i).css("left", dropLeft);
+                $("#drop" + i).css("top", dropTop);
+            }
+        }
+        
+        createRain();
         
         //var loopWave = setInterval(function(){ moveWave() }, 300);
         

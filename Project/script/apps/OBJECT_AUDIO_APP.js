@@ -5,25 +5,23 @@ var OBJECT_AUDIO_APP = {
         $(".element").click(function(){
                 var soundName = $(this).attr('id');
                 $(this).toggleClass("playing");
-                if($(this).hasClass('playing')){
+                if($(this).hasClass("playing")){    
                     playSound(soundName);
-                }else{
+                } else{
                     pauseSound(soundName);
                 }
-                
             })
-            //Resets a sound's timer and plays it from the start
         
-        var waterSounds = OBJECT_AUDIO.getWaterSound();
+        var sounds = OBJECT_AUDIO.getSound();
         
             function playSound(name) {
-                waterSounds[name].currentTime = 0;
-                waterSounds[name].play();
+                sounds[name].currentTime = 0;
+                sounds[name].play();
             }
             
             function pauseSound(name) {
-                waterSounds[name].currentTime = 0;
-                waterSounds[name].pause();
+                sounds[name].currentTime = 0;
+                sounds[name].pause();
             }
         
     }// end init

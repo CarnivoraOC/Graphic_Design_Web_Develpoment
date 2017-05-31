@@ -139,3 +139,28 @@ background-image:-ms-linear-gradient(top, #13002b 18%, #80001e 60%,#e2673c 100%)
 }
 /*END elements*/
 
+.drop {
+  background: #fff;
+  width: 1px;
+  height: 6px;
+  position: absolute;
+  bottom: 200px;
+  -webkit-animation: fall .65s linear infinite;
+  -moz-animation: fall .65s linear infinite;
+}
+
+
+/* animate the drops*/
+
+@-webkit-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
+@-moz-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
