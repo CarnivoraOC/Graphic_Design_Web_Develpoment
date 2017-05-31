@@ -9,41 +9,61 @@
 
 <title>New HMTL document by NewJect</title>
 
+<style>
+    
+    img {
+        height: 100px;
+    }
+    
+    </style>
+
 </head>
 <body>
 
-<div class="container">
+<div class="element" id="delfin">
     <img class="play" src="GDElements/Hav/Elementer/delfin.svg">
 </div>
 
-<img class="pause" src="GDElements/Hav/Elementer/maake.svg">
+<div class="element" id="maake">
+    <img class="pause" src="GDElements/Hav/Elementer/maake.svg">
+</div>
+
 
 <script src="script/js/jquery-3.2.0.min.js"></script>
 <script src="script/js/jquery-ui.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-            var audioElement = document.createElement('audio');
-            audioElement.setAttribute('src', 'GDElements/Hav/Lyder/maake.mp3');
-            audioElement.setAttribute('loop', 'loop');
-            //audioElement.load()
+        $(document).ready(function () {
+            //Sample sound table
+            var sounds = {
+                "delfin": new Audio("GDElements/Hav/Lyder/bolge.wav")
+                , "maake": new Audio("GDElements/Hav/Lyder/maake.mp3")
+            };
+            
+            
+            $(".element").click(function(){
+                var soundName = $(this).attr('id');
+                $(this).toggleClass("playing");
+                if($(this).hasClass('playing')){
+                    playSound(soundName);
+                }else{
+                    pauseSound(soundName);
+                }
+                
+            })
 
-            $.get();
-
-            audioElement.addEventListener("load", function() {
-                audioElement.play();
-            }, true);
-
-            $('.play').click(function() {
-                audioElement.play();
-            });
-
-            $('.pause').click(function() {
-                audioElement.pause();
-            });
+            //Resets a sound's timer and plays it from the start
+            function playSound(name) {
+                sounds[name].currentTime = 0;
+                sounds[name].play();
+            }
+            
+            function pauseSound(name) {
+                sounds[name].currentTime = 0;
+                sounds[name].pause();
+            }
         });
-    
-</script>
+    </script>
 
 
 </body>
