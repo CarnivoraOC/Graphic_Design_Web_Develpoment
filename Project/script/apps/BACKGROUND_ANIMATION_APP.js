@@ -2,13 +2,21 @@ var BACKGROUND_ANIMATION_APP = {
     
      //HTML objects
     $lavaBackground2: null,
+    $waterGradient: null,
+    $earthGradient: null,
+    $fireGradient: null,
+    $airGradient: null,
     
     init: function(){
     
         var BP = BACKGROUND_ANIMATION_APP;
         
         var setHTMLObjects = function(){
-            BP.$lavaBackground2 =("#lavaBackground2")
+            BP.$lavaBackground2 =("#lavaBackground2");
+            BP.$waterGradient =("#waterGradient");
+            BP.$earthGradient =("#earthGradient");
+            BP.$fireGradient =("#fireGradient");
+            BP.$airGradient =("#airGradient");
         }();
         
         var playLavaGradient = function(){
@@ -17,18 +25,37 @@ var BACKGROUND_ANIMATION_APP = {
         }, 500);
         }();
         
-        var currentScenario = function(){
+        $.fn.isOnScreen = function () {
+                var win = $(window);
+                var viewport = {
+                    left: win.scrollLeft()
+                };
+                viewport.right = viewport.left + win.width();
+                var bounds = this.offset();
+                bounds.right = bounds.left + this.outerWidth();
+                return (!(viewport.right < bounds.left || viewport.left > bounds.right));
+            };
+            
+       $(window).scroll(function() {
+
+           
+            if ($("#earthScenario").isOnScreen() == true) {
+                $("#earthGradient").animate({"opacity":"1"}, 1000);
+            }
+            if ($("#fireScenario").isOnScreen() == true) {
+                $("#fireGradient").animate({"opacity":"1"}, 1000);
+            }
+            if ($("#airScenario").isOnScreen() == true) {
+                $("#airGradient").animate({"opacity":"1"}, 1000);
+            }
+
+
+        });
+        
+        function backgroundOpacity(){
             
         }
         
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-$.each($("div"),function(){
-    p = $(this).position();
-    //horizontal
-    if (p.left < 0 - $(this).width() || p.left > w){
-        console.log($(this) + "er i vewprt")
-    }
-});
     }// end init
    
 }; //End BACKGROUND_ANIMATION_APP

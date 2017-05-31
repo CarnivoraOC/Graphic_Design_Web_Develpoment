@@ -21,6 +21,7 @@ body{
 }
 
 #waterGradient{
+    opacity: 1;
     background: rgb(153, 215, 247);
     background: -moz-linear-gradient(top,  rgba(153, 215, 247,1) 0%, rgba(211, 166, 193,1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153, 215, 247,1)), color-stop(100%,rgba(211, 166, 193,1)));
@@ -31,6 +32,7 @@ body{
 }
 
 #earthGradient{
+    opacity: 0;
     background: rgb(0, 192, 240);
     background: -moz-linear-gradient(top,  rgba(0, 192, 240,1) 0%, rgba(251, 217, 177,1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 192, 240,1)), color-stop(100%,rgba(251, 217, 177,1)));
@@ -41,6 +43,7 @@ body{
 }
 
 #fireGradient{
+    opacity: 0;
  background-color:#13002b;
  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#13002b, endColorstr=#80001e);
  background-image:-moz-linear-gradient(top, #13002b 18%, #80001e 60%,#e2673c 100%);
@@ -52,6 +55,7 @@ background-image:-ms-linear-gradient(top, #13002b 18%, #80001e 60%,#e2673c 100%)
 }
 
 #airGradient{
+    opacity: 0;
     background: rgb(179, 76, 112);
     background: -moz-linear-gradient(top,  rgba(179, 76, 112,1) 0%, rgba(13, 28, 78,1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(179, 76, 112,1)), color-stop(100%,rgba(13, 28, 78,1)));

@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>New HMTL document by NewJect</title>
-
-<style>
-    
-    img {
-        height: 100px;
-    }
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>New HMTL document by NewJect</title>
+    <style>
+        .huge-div {
+            height: 100vh;
+            width: 2200px;
+            background-color: aqua;
+            float: left;
+            display: block;
+        }
+        
+        #div2 {
+            margin-left: 2300px;
+        }
+        
+        #div3 {
+            margin-left: 4600px;
+        }
+        
+        #div4 {
+            margin-left: 6900px;
+        }
     </style>
-
 </head>
+
 <body>
 
-<div class="element" id="delfin">
-    <img class="play" src="GDElements/Hav/Elementer/delfin.svg">
-</div>
+        <div id="div1" class="huge-div"></div>
+        <div id="div2" class="huge-div"></div>
+        <div id="div3" class="huge-div"></div>
+        <div id="div4" class="huge-div"></div>
 
-<div class="element" id="maake">
-    <img class="pause" src="GDElements/Hav/Elementer/maake.svg">
-</div>
-
-
-<script src="script/js/jquery-3.2.0.min.js"></script>
-<script src="script/js/jquery-ui.min.js"></script>
-
-<script>
+    <script src="script/js/jquery-3.2.0.min.js"></script>
+    <script src="script/js/jquery-ui.min.js"></script>
+    <script>
         $(document).ready(function () {
-            //Sample sound table
-            var sounds = {
-                "delfin": new Audio("GDElements/Hav/Lyder/bolge.wav"), "maake": new Audio("GDElements/Hav/Lyder/maake.mp3")
+            function onScreen(){
+        $.fn.isOnScreen = function () {
+            var win = $(window);
+            var viewport = {
+                top: win.scrollTop(), 
+                left: win.scrollLeft()
             };
-            
-            
-            $(".element").click(function(){
-                var soundName = $(this).attr('id');
-                $(this).toggleClass("playing");
-                if($(this).hasClass('playing')){
-                    playSound(soundName);
-                }else{
-                    pauseSound(soundName);
-                }
-                
-            })
 
-            //Resets a sound's timer and plays it from the start
-            function playSound(name) {
-                sounds[name].currentTime = 0;
-                sounds[name].play();
-            }
+            viewport.right = viewport.left + win.width();
+            viewport.bottom = viewport.top + win.height();
+            var bounds = this.offset();
+            bounds.right = bounds.left + this.outerWidth();
+            bounds.bottom = bounds.top + this.outerHeight();
+            return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+        }
+    };
             
-            function pauseSound(name) {
-                sounds[name].currentTime = 0;
-                sounds[name].pause();
+        $(window).scroll(function() {
+           if ($("#div1").isOnScreen() == true) {
+             console.log("div1 vises");
             }
+            if ($("#div2").isOnScreen() == true) { 
+            console.log("div2 vises");
+            }
+            if ($("#div3").isOnScreen() == true) { 
+            console.log("div3 vises");
+            }
+            if ($("#div3").isOnScreen() == true) { 
+            console.log("div4 vises");
+            }
+
+        });    
         });
     </script>
-
-
 </body>
+
 </html>

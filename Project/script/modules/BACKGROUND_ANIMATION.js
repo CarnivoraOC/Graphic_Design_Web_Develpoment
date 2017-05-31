@@ -31,17 +31,13 @@ var BACKGROUND_ANIMATION = (function(){
         }, time);
     }
     
-    function isElementInViewport(element){
-        var elemTop = element.getBoundingClientRect().top;
-        var elemBottom = element.getBoundingClientRect().bottom;
-
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    return isVisible;
-    }
-
+    
+    
+    
     return {
         getRandomColor: getRandomColor,
         autochangeClass: autochangeClass,
+        
     }
     
     
