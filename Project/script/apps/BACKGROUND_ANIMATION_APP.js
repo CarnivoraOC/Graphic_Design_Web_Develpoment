@@ -24,15 +24,19 @@ var BACKGROUND_ANIMATION_APP = {
           $("#lavaBackground2").fadeToggle(2200, "linear")
         }, 500);
         }();
-        
+            
         $.fn.isOnScreen = function () {
                 var win = $(window);
                 var viewport = {
                     left: win.scrollLeft()
                 };
+            
                 viewport.right = viewport.left + win.width();
                 var bounds = this.offset();
                 bounds.right = bounds.left + this.outerWidth();
+
+            
+                //retrun true or false
                 return (!(viewport.right < bounds.left || viewport.left > bounds.right));
             };
             
@@ -52,9 +56,6 @@ var BACKGROUND_ANIMATION_APP = {
 
         });
         
-        function backgroundOpacity(){
-            
-        }
         
     }// end init
    
