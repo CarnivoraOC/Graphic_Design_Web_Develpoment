@@ -162,11 +162,21 @@
     width: 350px;
 }
 
-#airThunder{
+#airThunderContainer{
     top: 200px;
     left: 1500px;
     height: 280px;
     width: 280px;
+}
+
+#airLightning{
+    height: 100%;
+    width: 100%;
+}
+
+#airSky{
+    height: 100%;
+    width: 100%;
 }
 
 #airWolf{

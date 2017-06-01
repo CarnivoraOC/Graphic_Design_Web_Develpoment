@@ -31,7 +31,7 @@ var OBJECT_AUDIO = (function(){
         "fireMask" : new Audio(fireSource + "Tribal_mask.wav"),
         "fireVolcano" : new Audio(fireSource + "Vulkanutbrudd.wav"),*/
         "airRain" : new Audio("GDElements/Luft/Lyder/regn.wav"),
-        "airThunder" : new Audio("GDElements/Luft/Lyder/torden.wav"),
+        "airSky" : new Audio("GDElements/Luft/Lyder/torden.wav"),
         "airWolf" : new Audio("GDElements/Luft/Lyder/ulv.wav"),
         "airWindchime" : new Audio("GDElements/Luft/Lyder/windchime.mp3")    
         
