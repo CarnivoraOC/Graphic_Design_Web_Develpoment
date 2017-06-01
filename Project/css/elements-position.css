@@ -5,8 +5,10 @@
 
 /*START water elements*/
 #waterWave{
-    top: 480px;
+    top: 530px;
     left: 400px;
+    height: 140px;
+    width: 140px;
 }
 
 #waterDolphin{

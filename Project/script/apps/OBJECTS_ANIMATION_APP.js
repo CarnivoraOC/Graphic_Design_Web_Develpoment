@@ -37,9 +37,9 @@ var OBJECTS_ANIMATION_APP = {
                     $(this).effect("shake", "slow");
                 }) // end shakemask
             var moveWave = $("#waterWave").click(function () {
-                    $(this).animate({
-                        left: "-200px"
-                    });
+
+                        $(this).find('img').slideToggle(2000, "linear"); 
+
                 }) // end moveWave
             var volcaneSmoke = $("#fireVolcano").click(function () {
                     $(this).fadeOut(2000);
