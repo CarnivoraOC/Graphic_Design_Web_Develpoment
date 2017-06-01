@@ -144,9 +144,9 @@ background-image:-ms-linear-gradient(top, #13002b 18%, #80001e 60%,#e2673c 100%)
 /*END elements*/
 
 .drop {
-  background: #fff;
+  background: #8aacb8;
   width: 1px;
-  height: 6px;
+  height: 15px;
   position: absolute;
   bottom: 200px;
   -webkit-animation: fall .65s linear infinite;

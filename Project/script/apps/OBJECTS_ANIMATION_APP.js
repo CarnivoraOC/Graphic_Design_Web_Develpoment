@@ -23,7 +23,8 @@ var OBJECTS_ANIMATION_APP = {
             $(this).fadeIn(2000);
             
         }) //end volcaneSmoke
-        
+    
+        // rain function
        var nbDrop = 500;
         
         var getRandomRange = function(minNum, maxNum){
@@ -44,11 +45,21 @@ var OBJECTS_ANIMATION_APP = {
             }
         }
         
-        createRain();
+        var makeItRain = $("#airRain").click(function(){
+            createRain();    
+        })
+        
+        
+        /*var createLightning = $("#airThunder").click(function(){
+            $("#airScenario").toggle("highlight");
+        })*/
+        
+        //end rain
+        
         
         //var loopWave = setInterval(function(){ moveWave() }, 300);
         
     }//end init
     
     
-}
+}// end app
