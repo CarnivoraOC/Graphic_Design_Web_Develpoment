@@ -9,13 +9,13 @@ var OBJECT_AUDIO = (function(){
     //JSON list of all object sounds
     var soundArrayJSON = {
         
-        //"waterWave" : new Audio("GDElements/Hav/Lyder/bolge.wav"),
-        //"waterDolphin" : new Audio(waterSource + "maake.mp3"),
-        //"waterCoconutTree" : new Audio(waterSource + "bolge.wav"),
-        //"waterCoconut" : new Audio("GDElements/Hav/Lyder/kokosnott.wav"),
-        //"waterHut" : new Audio("GDElements/Hav/Lyder/strandhytte.wav"),
-        //"waterSeagul" : new Audio("GDElements/Hav/Lyder/maake.mp3"),
-        //"waterSurfboard" : new Audio(waterSource + "bolge.wav"),
+        "waterWave" : new Audio("GDElements/Hav/Lyder/bolge.wav"),
+        "waterDolphin" : new Audio("GDElements/Hav/Lyder/maake.mp3"),
+        "waterCoconutTree" : new Audio("GDElements/Hav/Lyder/bolge.wav"),
+        "waterCoconut" : new Audio("GDElements/Hav/Lyder/kokosnott.wav"),
+        "waterHut" : new Audio("GDElements/Hav/Lyder/strandhytte.wav"),
+        "waterSeagul" : new Audio("GDElements/Hav/Lyder/maake.mp3"),
+        "waterSurfboard" : new Audio("GDElements/Hav/Lyder/bolge.wav"),
   
         "earthEgg" : new Audio("GDElements/Oorken/Lyder/egg.mp3"),
         "earthCarpet" : new Audio("GDElements/Oorken/Lyder/flyvende_teppe.flac"),
@@ -26,10 +26,9 @@ var OBJECT_AUDIO = (function(){
         "earthSnake" : new Audio("GDElements/Oorken/Lyder/snek.wav"),
         "earthScull" : new Audio("GDElements/Oorken/Lyder/gresshopper.wav"),
         
-        "fireVolcano" : new Audio("GDElements/Ild/Lyder/campfire.wav"),
-        /* "fireTree" : new Audio(fireSource + "Dodt_tre_cello.aiff"),
-        "fireMask" : new Audio(fireSource + "Tribal_mask.wav"),
-        "fireVolcano" : new Audio(fireSource + "Vulkanutbrudd.wav"),*/
+        "fireTree" : new Audio("GDElements/Ild/Lyder/Dodt_tre_cello.aiff"),
+        "fireMask" : new Audio("GDElements/Ild/Lyder/Tribal_mask.wav"),
+        "fireVolcano" : new Audio("GDElements/Ild/Lyder/Vulkanutbrudd.wav"),
         "airRain" : new Audio("GDElements/Luft/Lyder/regn.wav"),
         "airSky" : new Audio("GDElements/Luft/Lyder/torden.wav"),
         "airWolf" : new Audio("GDElements/Luft/Lyder/ulv.wav"),

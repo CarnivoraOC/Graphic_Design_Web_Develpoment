@@ -195,6 +195,7 @@
 }
 /*END air elements*/
 .element{
+    opacity: 0.7;
     transition: all 1s; 
   -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
   -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
@@ -204,6 +205,7 @@
 }
 
 .element:hover {
+opacity: 1;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -217,6 +219,7 @@
 }
 
 .element.playing{
+    opacity: 1;
     -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);

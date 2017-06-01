@@ -10,7 +10,7 @@ var OBJECTS_ANIMATION_APP = {
                         createRain();
                     }
                 }) //End makeItRain
-            var nbDrop = 500;
+            var nbDrop = 100;
             var createRain = function () {
                     var running = true;
                     var rain = $(".rain");
