@@ -34,12 +34,15 @@ var OBJECTS_ANIMATION_APP = {
                 }) // End createLightning
                 //var loopWave = setInterval(function(){ moveWave() }, 300);
             var shakeMask = $("#earthSnake").click(function () {
-                    $(this).effect("shake", "slow");
+                    $(this).find('img').effect("shake", "slow");
                 }) // end shakemask
             var moveWave = $("#waterWave").click(function () {
-
-                        $(this).find('img').slideToggle(2000, "linear"); 
-
+                setInterval(function(){
+                    $(this).find('img').slideToggle(1500, "linear");
+                    $(this).find('img').slideToggle(1500, "linear");
+                },0);
+                        
+            
                 }) // end moveWave
             var volcaneSmoke = $("#fireVolcano").click(function () {
                     $(this).fadeOut(2000);
