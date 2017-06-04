@@ -1,261 +1,279 @@
-.element{
+/*Contains positioning for all elements with class .element, and some general styling for .element*/
+
+
+/*START general elements styling*/
+
+.element {
     height: 200px;
     width: 200px;
 }
 
+.element * {
+    position: absolute;
+}
+
+.element:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: '';
+    -moz-animation: none;
+    -o-animation: '';
+    animation: '';
+}
+
+.element.playing {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: '';
+    -moz-animation: none;
+    -o-animation: '';
+    animation: '';
+}
+
+
+/*END general elements styling*/
+
+
 /*START water elements*/
-#waterWave{
+
+#waterWave {
     top: 530px;
     left: 400px;
     height: 140px;
     width: 140px;
 }
 
-#waterDolphin{
+#waterDolphin {
     top: 450px;
     left: 300px;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
 }
 
-#waterCoconutContainer{
+#waterCoconutContainer {
     top: 480px;
     left: 1200px;
 }
 
-#waterCoconutContainer *{
+#waterCoconutContainer * {
     position: absolute;
 }
 
-#waterCoconutTree{
+#waterCoconutTree {
     height: 200px;
     width: 200px;
 }
 
-#waterCoconut{
+#waterCoconut {
     height: 40px;
     width: 40px;
     left: 70px;
     top: 40px;
 }
 
-#waterHutContainer{
+#waterHutContainer {
     top: 420px;
     left: 800px;
 }
 
-#waterHutContainer *{
+#waterHutContainer * {
     position: absolute;
 }
 
-#waterSeagul{
+#waterSeagul {
     height: 80px;
     width: 80px;
     top: -35px;
     left: 80px;
 }
 
-#waterHut{
+#waterHut {
     height: 220px;
     width: 220px;
 }
 
-#waterSurfboard{
+#waterSurfboard {
     height: 100px;
     width: 50px;
     top: 120px;
     left: 190px;
 }
+
+
 /*END water elements*/
 
+
 /*START earth elements*/
-#earthEgg{
+
+#earthEgg {
     top: 400px;
-    left: 840px;
-    height: 30px;
+    left: 800px;
+    height: 40px;
     width: 30px;
 }
 
-#earthCarpet{
+#earthCarpet {
     top: 100px;
-    left:1300px;
+    left: 1300px;
 }
 
-#earthScull{
+#earthScull {
     top: 550px;
     left: 900px;
     height: 100px;
     width: 100px;
 }
 
-#earthCactusLarge{
+#earthCactusLarge {
     top: 500px;
     left: 200px;
 }
 
-#earthCactusSmall{
+#earthCactusSmall {
     top: 430px;
     left: 1400px;
     height: 50px;
     width: 50px;
 }
 
-#earthCamel{
+#earthCamel {
     height: 30px;
     width: 30px;
     left: 1040px;
     top: 320px;
 }
 
-#earthPyramids{
-    height: 350px;
+#earthPyramids {
+    height: 150px;
     width: 350px;
     top: 420px;
-    left: 830px;
+    left: 870px;
 }
 
-#earthSnake{
+#earthSnake {
     top: 520px;
     left: 50px;
     height: 100px;
     width: 100px;
 }
+
+
 /*END earth elements*/
 
+
 /*START fire elements*/
-#fireCampfire{
-    height: 60px;
+
+#fireCampfireContainer {
+    height: 100px;
     width: 60px;
     top: 540px;
-    left: 500px;
+    left: 520px;
 }
 
-#fireTree{
-    height: 300px;
+#fireCampfire {
+    height: 100px;
+    width: 60px;
+}
+
+#fireCampwood {
+    height: 100px;
+    width: 60px;
+}
+
+#fireTree {
+    height: 400px;
     width: 300px;
     top: 250px;
-    left: 250px;
+    left: 200px;
 }
 
-#fireMask{
+#fireMask {
     height: 60px;
     width: 60px;
     top: 630px;
     left: 1100px;
-    -ms-transform: rotate(60deg); /* IE 9 */
-    -webkit-transform: rotate(60deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(60deg);
+    /* IE 9 */
+    -webkit-transform: rotate(60deg);
+    /* Chrome, Safari, Opera */
     transform: rotate(60deg);
-    
 }
 
-#fireVolcano{
+#fireVolcano {
     top: 100px;
     left: 950px;
     width: 600px;
     height: 200px;
 }
+
+
 /*END fire elements*/
 
+
 /*START air elements*/
-#airRain{
+
+#airRain {
     top: 200px;
     left: 800px;
     height: 350px;
     width: 350px;
 }
 
-#airThunderContainer{
+#airThunderContainer {
     top: 200px;
     left: 1500px;
     height: 280px;
     width: 280px;
 }
 
-#airLightning{
+#airLightning {
+    height: 100%;
+    width: 100%;
+    top: -10px;
+}
+
+#airSky {
     height: 100%;
     width: 100%;
 }
 
-#airSky{
-    height: 100%;
-    width: 100%;
-}
-
-#airWolf{
+#airWolf {
     top: 380px;
     left: 400px;
     height: 180px;
     width: 180px;
 }
 
-#airWindchime{
+#airWindchime {
     left: 650px;
     top: 550px;
     left: 690px;
     height: 50px;
     width: 50px;
 }
+
+.drop {
+    background: #8aacb8;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    bottom: 200px;
+    -webkit-animation: fall .65s linear infinite;
+    -moz-animation: fall .65s linear infinite;
+}
+
+#airLightning {
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
+    -o-filter: brightness(3);
+    -moz-filter: brightness(3);
+}
+
+
 /*END air elements*/
-.element{
-    opacity: 0.7;
-    transition: all 1s; 
-  -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
-  -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
-  -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
-  -o-animation: 1600ms pulsate infinite alternate ease-in-out;
-  animation: 1600ms pulsate infinite alternate ease-in-out;
-}
-
-.element:hover {
-opacity: 1;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-animation:'';
-  -moz-animation:none;
-  -ms-animation:'';
-  -o-animation:'';
-  animation:'';
-}
-
-.element.playing{
-    opacity: 1;
-    -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-animation:'';
-  -moz-animation:none;
-  -ms-animation:'';
-  -o-animation:'';
-  animation:'';
-}
-
-@keyframes pulsate {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-@-webkit-keyframes pulsate {
-  0% { -webkit-transform: scale(1); }
-  50% { -webkit-transform: scale(1.1); }
-  100% { -webkit-transform: scale(1); }
-}
-@-moz-keyframes pulsate {
-  0% { -moz-transform: scale(1); }
-  50% { -moz-transform: scale(1.1); }
-  100% { -moz-transform: scale(1); }  
-}
-@-ms-keyframes pulsate {
-  0% { -ms-transform: scale(1); }
-  50% { -ms-transform: scale(1.1); }
-  100% { -ms-transform: scale(1); }  
-}
-@-o-keyframes pulsate {
-  0% { -o-transform: scale(1); }
-  50% { -o-transform: scale(1.1); }
-  100% { -o-transform: scale(1); }  
-}

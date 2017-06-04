@@ -8,12 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link type="text/css" rel="stylesheet" href="css/elements-position.css">
+    <link type="text/css" rel="stylesheet" href="css/elements-animation.css">
+    <link type="text/css" rel="stylesheet" href="css/elements-animation-triggers.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <title></title>
 </head>
 
 <body>
-<div id="container">
+    <div id="container">
         <div class="gradient-background" id="waterGradient"></div>
         <div class="gradient-background" id="earthGradient"></div>
         <div class="gradient-background" id="fireGradient"></div>
@@ -21,20 +23,22 @@
         <div id="background"><img src="GDElements/Landskapselementer/bakgrunn.svg"></div>
         <div id="lavaBackground1"></div>
         <div id="lavaBackground2"></div>
-        <div id="bigMoon"></div>
+        <div id="lightningBackground"></div>
+        <div id="bigMoon1" class="big-moon"></div>
+        <div id="bigMoon2" class="big-moon"></div>
         <div id="foreground"> <img src="GDElements/Landskapselementer/forgrunn.svg"> </div>
-        <div id="scenarioContainer" >
+        <div id="scenarioContainer">
             <div id="waterScenario" class="scenario-div">
                 <div id="waterWave" class="element water-element"><img src="GDElements/Hav/Elementer/bolge.svg"></div>
-                <div id="waterDolphin" class="element water-element"><img src="GDElements/Hav/Elementer/delfin.svg"></div>
+                <div id="waterDolphin"> <img id="dolphinImg" src="GDElements/Hav/Elementer/delfin.svg"> </div>
                 <div id="waterCoconutContainer" style="pointerevents: none;">
-                    <div id="waterCoconutTree" class="element water-element"><img src="GDElements/Hav/Elementer/kokosnott.svg"></div>
+                    <div id="waterCoconutTree"><img src="GDElements/Hav/Elementer/kokosnott.svg"></div>
                     <div id="waterCoconut" class="element water-element"><img src="GDElements/Hav/Elementer/kokosnott_2.svg"></div>
                 </div>
-                <div id="waterHutContainer"  style="pointerevents: none;">
+                <div id="waterHutContainer" style="pointerevents: none;">
                     <div id="waterHut" class="element water-element"><img src="GDElements/Hav/Elementer/strandhytte.svg"></div>
                     <div id="waterSeagul" class="element water-element"><img src="GDElements/Hav/Elementer/maake.svg"></div>
-                    <div id="waterSurfboard" class="element water-element"><img src="GDElements/Hav/Elementer/surfebrett.svg"></div>
+                    <div id="waterSurfboard"><img src="GDElements/Hav/Elementer/surfebrett.svg"></div>
                 </div>
             </div>
             <div id="earthScenario" class="scenario-div">
@@ -44,28 +48,34 @@
                 <div id="earthCactusSmall" class="element earth-element"><img src="GDElements/Oorken/Elementer/kaktus2.svg"></div>
                 <div id="earthCamel" class="element earth-element"><img src="GDElements/Oorken/Elementer/kamel.svg"></div>
                 <div id="earthPyramids" class="element earth-element"><img src="GDElements/Oorken/Elementer/pyramider.svg"></div>
-                <div id="earthSnake" class="element earth-element"><img src="GDElements/Oorken/Elementer/snek.svg"></div>
+                <div id="earthSnake" class="element earth-element paused"><img src="GDElements/Oorken/Elementer/snek.svg"></div>
                 <div id="earthScull" class="element earth-element"><img src="GDElements/Oorken/Elementer/hodeskalle.svg"></div>
             </div>
             <div id="fireScenario" class="scenario-div">
-                <div id="fireCampfire" class="element fire-element"><img src="GDElements/Ild/Elementer/baal.svg"></div>
+                <div id="fireCampfireContainer" style="pointerevents:none">
+                    <div id="fireCampwood" class="element fire-element"><img src="GDElements/Ild/Elementer/baal_ved.svg"></div>
+                    <div id="fireCampfire" class="element fire-element"><img src="GDElements/Ild/Elementer/baal_flammer.svg"></div>
+                </div>
                 <div id="fireTree" class="element fire-element"><img src="GDElements/Ild/Elementer/dodt_tre_cello.svg"></div>
                 <div id="fireMask" class="element fire-element"><img src="GDElements/Ild/Elementer/tribal_mask.svg"></div>
                 <div id="fireVolcano" class="element fire-element"><img src="GDElements/Ild/Elementer/vulkanutbrudd.svg"></div>
             </div>
             <div id="airScenario" class="scenario-div">
-               <div id="rain" class="rain"></div>
-               <div id="bg"></div>
-               <div id="lightning"></div>
-                <div id="airRain" class="element air-element"><img src="GDElements/Luft/Elementer/regn.svg"></div>
-                <div id="airThunderContainer" style = "pointerevents:none">
-                    <div class="element air-element" id="airLightning"><img src="GDElements/Luft/Elementer/torden_lyn.svg"></div>
+                <div id="airRain" class="element air-element rain"><img src="GDElements/Luft/Elementer/regn_sky.svg"></div>
+                <div id="airThunderContainer" style="pointerevents:none">
+                    <div class="element air-element" id="airLightning"><img src="GDElements/Luft/Elementer/torden_lyn.svg" style="opacity: 0"></div>
                     <div class="element air-element" id="airSky"><img src="GDElements/Luft/Elementer/torden_sky.svg"></div>
                 </div>
                 <div id="airWolf" class="element air-element"><img src="GDElements/Luft/Elementer/ulv.svg"></div>
                 <div id="airWindchime" class="element air-element"><img src="GDElements/Luft/Elementer/windchime.svg"></div>
             </div>
         </div>
+        <div id="menu" class='glass down'>
+            <div id="menuContent">
+                <h1>Ambience generator</h1>
+                <p>This is a place to chill and examine. Click the different elements to create an atmosphere.</br> Explore an entire day in four different places in ambience generator.</p> <img id="resetButton" style="background-image: url('GDElements/Icons/refresh.svg')" /> </div>
+        </div>
+        <button class='toggle'>+</button>
     </div>
     <script src="script/js/jquery-3.2.0.min.js"></script>
     <script src="script/js/jquery-ui.min.js"></script>
@@ -76,8 +86,17 @@
     <script src="script/apps/BACKGROUND_ANIMATION_APP.js"></script>
     <script src="script/apps/OBJECTS_ANIMATION_APP.js"></script>
     <script src="script/apps/OBJECT_AUDIO_APP.js"></script>
+    <script src="script/apps/MENU_APP.js"></script>
     <script src="script/main.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            //Firefly plugin generates firefly-elements for fireScenario. Used in this project in order to get to test out usage of plugins.
+            $.firefly({
+                images: ["GDElements/Partikler/partikkel_1.png"]
+                , total: 20
+            });
+        });
+    </script>
 </body>
 
 </html>

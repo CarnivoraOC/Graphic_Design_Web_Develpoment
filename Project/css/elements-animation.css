@@ -1,0 +1,256 @@
+/*Contains css keyframe animations. Animations is triggered in classes from elements-animation-triggers.css*/
+
+
+/*PULSATE ANIMATION*/
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.05);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulsate {
+    0% {
+        -moz-transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(1.05);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes pulsate {
+    0% {
+        -o-transform: scale(1);
+    }
+    50% {
+        -o-transform: scale(1.05);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+
+/*WIGGLE ANIMATION*/
+
+@-webkit-keyframes wiggle {
+    0% {
+        -webkit-transform: rotateZ(10deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-10deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(10deg);
+    }
+}
+
+@-moz-keyframes wiggle {
+    0% {
+        -moz-transform: rotateZ(10deg);
+    }
+    50% {
+        -moz-transform: rotateZ(-10deg);
+    }
+    100% {
+        -moz-transform: rotateZ(10deg);
+    }
+}
+
+@-o-keyframes wiggle {
+    0% {
+        -o-transform: rotateZ(10deg);
+    }
+    50% {
+        -o-transform: rotateZ(-10deg);
+    }
+    100% {
+        -o-transform: rotateZ(10deg);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(10deg);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
+
+
+/*FLASH ANIMATION*/
+
+@-webkit-keyframes flash {
+    from {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    93% {
+        opacity: 0.6;
+    }
+    94% {
+        opacity: 0.2;
+    }
+    96% {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash {
+    from {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    93% {
+        opacity: 0.6;
+    }
+    94% {
+        opacity: 0.2;
+    }
+    96% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flash {
+    from {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    93% {
+        opacity: 0.6;
+    }
+    94% {
+        opacity: 0.2;
+    }
+    96% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    from {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    93% {
+        opacity: 0.6;
+    }
+    94% {
+        opacity: 0.2;
+    }
+    96% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/*FALL ANIMATION*/
+
+@-webkit-keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+@-moz-keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+@-o-keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+@keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+
+/*ROTATE ANIMATION*/
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}

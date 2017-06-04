@@ -1,0 +1,43 @@
+/*Contains trigger classes for css animations in elements-animation.css*/
+
+
+/*START general element triggers*/
+
+.element {
+    opacity: 0.7;
+    transition: all 1s;
+    -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+    -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+    -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+    animation: 1600ms pulsate infinite alternate ease-in-out;
+}
+
+
+/*END general element triggers*/
+
+
+/*START spesific element triggers*/
+
+.flashit {
+    -webkit-animation: flash ease-out 1s infinite;
+    -moz-animation: flash ease-out 1s infinite;
+    -o-animation: flash ease-out 1s infinite;
+    animation: flash ease-out 1s infinite;
+}
+
+.wiggleit {
+    -webkit-animation: wiggle ease-out 3s infinite;
+    -moz-animation: wiggle ease-out 3s infinite;
+    -o-animation: wiggle ease-out 3s infinite;
+    animation: wiggle ease-out 3s infinite;
+}
+
+.rotateit {
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+}
+
+
+/*END spesific element triggers*/
